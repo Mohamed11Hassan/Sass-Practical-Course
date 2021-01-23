@@ -1,5 +1,11 @@
-.x{
-	color: green;
-	background-color: white;
-	font-size:20px;
-} 
+
+// main helper files that required 
+@import 'sass/helpers/variables';
+@import 'sass/helpers/mixins';
+
+
+@import 'sass/layout/header';
+
+@import 'sass/pages/homepage';
+
+@import 'sass/layout/footer';
