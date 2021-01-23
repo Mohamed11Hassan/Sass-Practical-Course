@@ -1,1 +1,17 @@
-﻿
+﻿p{
+	@media(max-width: $maxMobile){
+		color: red;
+	}
+
+	@media(min-width: $sm){
+		color: green;
+	}
+
+	@media #{$mid} {
+		color: blue;
+	}
+
+	@include largeMedia($lg) {
+		color: magenta;
+	}
+}

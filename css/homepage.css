@@ -1,3 +1,22 @@
-
+@media (max-width: 767px) {
+  p {
+    color: red;
+  }
+}
+@media (min-width: 768px) {
+  p {
+    color: green;
+  }
+}
+@media (min-width: 992px) {
+  p {
+    color: blue;
+  }
+}
+@media (min-width: 1200px) {
+  p {
+    color: magenta;
+  }
+}
 
 /*# sourceMappingURL=homepage.css.map */
