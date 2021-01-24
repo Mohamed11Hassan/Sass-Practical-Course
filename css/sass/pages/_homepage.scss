@@ -1,17 +1,11 @@
-﻿p{
-	@media(max-width: $maxMobile){
-		color: red;
-	}
-
-	@media(min-width: $sm){
-		color: green;
-	}
-
-	@media #{$mid} {
-		color: blue;
-	}
-
-	@include largeMedia($lg) {
-		color: magenta;
+﻿.product{
+	position: relative;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	width: 200px;
+	height: 150px;
+	@include prefixer(box-shadow, 10px 10px 10px #ccc, wibkit moz o);
+	.overlay{
+		@include overlay(5, $redColor, 0.9);
 	}
 }

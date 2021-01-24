@@ -1,5 +1,36 @@
-﻿@mixin largeMedia ($width){
+﻿/*
+	****mediaQuery mixin to handle large screens
+
+*/
+
+@mixin largeMedia ($width){
 	@media (min-width: $width){
 		@content;
 	}
+}
+
+
+/*
+
+	****overlay mixin
+	
+*/
+
+@mixin overlay($Zindex, $bgColor, $bgColorOpacity: 1){
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($bgColor, $bgColorOpacity);
+	z-index: $Zindex;
+
+}
+
+@mixin prefixer ($prop, $value, $prefixes: ()) {
+	@each $prefix in $prefixes {
+		#{'-' + $prefix  + '-' + $prop}: $value;
+	}
+
+	#{$prop}: $value;
 }
