@@ -14,15 +14,36 @@
 */
 /*
 
-	****overlay mixin
+	****overlay effect mixin
 
 */
+/*
+
+	****css auto adding prefixes mixin
+
+*/
+/*
+
+	****animation mixin with its prefixes
+
+*/
+.container {
+  width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .product {
   position: relative;
   background-color: #eee;
   border: 1px solid #ccc;
   width: 200px;
   height: 150px;
+  -webkit-animation: fadeIn 5s infinite linear;
+  -moz-animation: fadeIn 5s infinite linear;
+  -o-animation: fadeIn 5s infinite linear;
+  animation: fadeIn 5s infinite linear;
   -wibkit-box-shadow: 10px 10px 10px #ccc;
   -moz-box-shadow: 10px 10px 10px #ccc;
   -o-box-shadow: 10px 10px 10px #ccc;
@@ -36,6 +57,40 @@
   height: 100%;
   background-color: rgba(226, 73, 76, 0.9);
   z-index: 5;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
 
 /*# sourceMappingURL=homepage.css.map */

@@ -12,7 +12,7 @@
 
 /*
 
-	****overlay mixin
+	****overlay effect mixin
 	
 */
 
@@ -27,10 +27,39 @@
 
 }
 
+
+/*
+
+	****css auto adding prefixes mixin
+	
+*/
+
 @mixin prefixer ($prop, $value, $prefixes: ()) {
 	@each $prefix in $prefixes {
 		#{'-' + $prefix  + '-' + $prop}: $value;
 	}
 
 	#{$prop}: $value;
+}
+
+
+/*
+
+	****animation mixin with its prefixes
+	
+*/
+
+
+@mixin keyFrame($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content; 
+	}
+
+	@-moz-keyframes #{$animationName} {
+		@content; 
+	}
+
+	@keyframes #{$animationName} {
+		@content; 
+	}
 }
