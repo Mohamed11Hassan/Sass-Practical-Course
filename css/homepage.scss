@@ -2,7 +2,9 @@
 // main helper files that required 
 @import 'sass/helpers/variables';
 @import 'sass/helpers/mixins';
+@import 'sass/vendor/normalize';
 @import 'sass/base/reset';
+@import 'sass/base/typography';
 @import 'sass/layout/grid';
 
 

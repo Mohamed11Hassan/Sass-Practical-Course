@@ -1,9 +1,12 @@
 ﻿.header {
+	padding: 20px 0;
+	overflow: hidden;
+	border-bottom: 1px solid $grayColor;
 	.logo{
 		width: 30%;
-		float: left;
+		float: $floatLeft;
 		h1{
-
+			margin-bottom: 0;
 		}
 		p{
 
@@ -12,9 +15,22 @@
 
 	.navbar{
 		width: 70%;
-		float: left;
+		float: $floatLeft;
+		background-color: $redColor;
+		border-radius: 15px;
 		li {
-
+			width: 20%;
+			float: $floatLeft;
+			font-size: 18px;
+			text-align:  center;
+			a{
+				display: block;
+				padding: 20px 10px;
+				color: #fff;
+				&:hover{
+					color: $grayColor;
+				}
+			}
 		}
 	}
 }
