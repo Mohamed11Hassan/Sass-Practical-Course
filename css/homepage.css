@@ -27,6 +27,15 @@
 	****animation mixin with its prefixes
 
 */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 .container {
   width: 1200px;
   margin: auto;
@@ -34,6 +43,14 @@
   padding-right: 15px;
 }
 
+.header .logo {
+  width: 30%;
+  float: left;
+}
+.header .navbar {
+  width: 70%;
+  float: left;
+}
 .product {
   position: relative;
   background-color: #eee;
